@@ -212,8 +212,7 @@ if not filtered_df.empty:
         wordcloud = WordCloud(
             width=800,
             height=400,
-            background_color='white',
-            font_path='/System/Library/Fonts/Supplemental/Arial Unicode.ttf'  # для macOS, в облаке может не работать, но оставим
+            background_color='white'
         ).generate(' '.join(words))
         fig7, ax = plt.subplots(figsize=(10, 5))
         ax.imshow(wordcloud, interpolation='bilinear')
